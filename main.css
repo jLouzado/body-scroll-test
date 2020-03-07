@@ -1,0 +1,31 @@
+.layout {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 200px 1fr;
+  grid-template-columns: 1fr [start] 240px [mid] 240px [end] 240px 1fr;
+}
+
+.header {
+  grid-column: 1 / -1;
+  grid-row: span 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pane {
+  display: flex;
+  justify-content: center;
+}
+
+.pane--one {
+  grid-column: start / span 1;
+}
+
+.pane--two {
+  grid-column: mid / span 1;
+}
+
+.pane--three {
+  grid-column: end / span 1;
+}
