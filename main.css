@@ -1,8 +1,9 @@
 .layout {
+  display: -ms-grid;
   display: grid;
   height: 100vh;
   grid-template-rows: 200px 1fr;
-  grid-template-columns: 1fr [start] 240px [mid] 240px [end] 240px 1fr;
+  grid-template-columns: 1fr [start] 240px [middle] 240px [end] 240px 1fr;
 }
 
 .header {
@@ -15,7 +16,9 @@
 
 .pane {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 4px;
 }
 
 .pane--one {
@@ -23,9 +26,51 @@
 }
 
 .pane--two {
-  grid-column: mid / span 1;
+  grid-column: middle / span 1;
 }
 
 .pane--three {
   grid-column: end / span 1;
+}
+
+.card {
+  margin: 4px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Heights */
+
+.card--small {
+  height: 32px;
+}
+
+.card--medium {
+  height: 60px;
+}
+
+.card--large {
+  height: 240px;
+}
+
+/* Colours */
+
+.card--color1 {
+  background-color: #462066;
+}
+
+.card--color2 {
+  background-color: #ffb85f;
+}
+
+.card--color3 {
+  background-color: #ff7a5a;
+}
+
+.card--color4 {
+  background-color: #00aaa0;
+}
+
+.card--color5 {
+  background-color: #8ed2c9;
 }
