@@ -2,7 +2,9 @@
   display: -ms-grid;
   display: grid;
   grid-template-rows: 200px 1fr;
-  grid-template-columns: 1fr [start] 720px [end] 1fr;
+  grid-template-columns: 1fr [start] 240px [middle] 240px [end] 240px 1fr;
+  column-gap: 8px;
+  height: calc(100vh + 200px);
 }
 
 .header {
@@ -33,14 +35,17 @@
 }
 
 .pane--one {
+  grid-row: 2 / span 1;
   grid-column: start / span 1;
 }
 
 .pane--two {
+  grid-row: 2 / span 1;
   grid-column: middle / span 1;
 }
 
 .pane--three {
+  grid-row: 2 / span 1;
   grid-column: end / span 1;
 }
 
