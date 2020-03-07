@@ -17,10 +17,11 @@ PANES.forEach(pane => {
 
   const cards = Array(length)
     .fill(null)
-    .map(el => {
+    .map((el, index) => {
       const size = sample(cardSizes)
       const color = rand(NUM_AVAILABLE_COLORS)
       const card = document.createElement('div')
+      card.appendChild(document.createTextNode(`Card #${index + 1}`))
       card.classList.add('card', `card--${size}`, `card--color${color + 1}`)
 
       return card
