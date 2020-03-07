@@ -1,7 +1,7 @@
 {
   "name": "body-scroll",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.html",
   "license": "MIT",
   "devDependencies": {
     "cz-conventional-changelog": "^3.1.0",
