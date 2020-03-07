@@ -1,7 +1,6 @@
 .layout {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
   grid-template-rows: 200px 1fr;
   grid-template-columns: 1fr [start] 240px [middle] 240px [end] 240px 1fr;
 }
