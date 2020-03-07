@@ -2,7 +2,7 @@
   display: -ms-grid;
   display: grid;
   grid-template-rows: 200px 1fr;
-  grid-template-columns: 1fr [start] 240px [middle] 240px [end] 240px 1fr;
+  grid-template-columns: 1fr [start] 720px [end] 1fr;
 }
 
 .header {
@@ -13,12 +13,20 @@
   justify-content: center;
 }
 
+.pane-layout {
+  display: flex;
+  width: 100%;
+  grid-column: start / end;
+  grid-row: 2 / span 1;
+  justify-content: space-between;
+}
+
 .pane {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 0 4px;
   height: 100vh;
+  min-width: 232px;
   overflow: hidden;
 }
 
