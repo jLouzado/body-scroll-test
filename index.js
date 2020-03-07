@@ -24,7 +24,7 @@ PANES.forEach(pane => {
       const card = document.createElement('div')
       card.classList.add('card', `card--${size}`, `card--color${color + 1}`)
 
-      if (sample(stickyRatio)) {
+      if (index + 1 < length && sample(stickyRatio)) {
         card.appendChild(document.createTextNode(`STICKY #${index + 1}`))
         card.classList.add('sticky--top')
       } else {
