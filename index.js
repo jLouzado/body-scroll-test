@@ -28,4 +28,8 @@ PANES.forEach(pane => {
     .forEach(card => {
       target.appendChild(card)
     })
+
+  document
+    .querySelector(`#${pane} .title`)
+    .appendChild(document.createTextNode(`(${length})`))
 })
