@@ -94,3 +94,10 @@
 .card--color5 {
   background-color: #8ed2c9;
 }
+
+/* Utilities */
+
+.sticky--top {
+  position: sticky;
+  top: 0;
+}
