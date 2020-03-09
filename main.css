@@ -104,3 +104,10 @@
 .card--color5 {
   background-color: #8ed2c9;
 }
+
+/* Behaviour */
+
+.card--sticky {
+  position: sticky;
+  top: 30px;
+}

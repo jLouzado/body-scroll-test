@@ -23,7 +23,12 @@ PANES.forEach(pane => {
       const color = rand(NUM_AVAILABLE_COLORS)
       const card = document.createElement('div')
       card.classList.add('card', `card--${size}`, `card--color${color + 1}`)
-      card.appendChild(document.createTextNode(`Card #${index + 1}`))
+      if (sample(stickyRatio) && index < length - 1) {
+        card.classList.add('card--sticky')
+        card.appendChild(document.createTextNode(`STICKY #${index + 1}`))
+      } else {
+        card.appendChild(document.createTextNode(`#${index + 1}`))
+      }
 
       return card
     })
