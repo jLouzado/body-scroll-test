@@ -34,17 +34,17 @@
   min-width: 232px;
 }
 
-.pane--one {
+.pane1 {
   grid-row: 2 / span 1;
   grid-column: start / span 1;
 }
 
-.pane--two {
+.pane2 {
   grid-row: 2 / span 1;
   grid-column: middle / span 1;
 }
 
-.pane--three {
+.pane3 {
   grid-row: 2 / span 1;
   grid-column: end / span 1;
 }

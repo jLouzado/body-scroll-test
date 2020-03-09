@@ -38,6 +38,6 @@ PANES.forEach(pane => {
     })
 
   document
-    .querySelector(`#${pane} .title`)
+    .querySelector(`.${pane} .title`)
     .appendChild(document.createTextNode(`(${length})`))
 })
