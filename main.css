@@ -16,7 +16,11 @@
 
 .title {
   min-height: 20px;
-  background-color: white;
+  position: sticky;
+  top: 0;
+  background-color: #bdc3c7;
+  z-index: 1;
+  width: 90%;
 }
 
 .pane-layout {
@@ -59,7 +63,6 @@
 .card {
   margin: 4px;
   border-radius: 4px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,10 +103,4 @@
 
 .card--color5 {
   background-color: #8ed2c9;
-}
-
-/* Utilities */
-
-.sticky--top {
-  top: 0;
 }
