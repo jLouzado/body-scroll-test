@@ -12,6 +12,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 40px;
+}
+
+.gridify.tiny {
+  background-image: linear-gradient(
+      transparent 11px,
+      #95a5a6 12px,
+      transparent 12px
+    ),
+    linear-gradient(90deg, transparent 11px, #95a5a6 12px, transparent 12px);
+  background-size: 100% 12px, 12px 100%;
 }
 
 .title {
