@@ -30,6 +30,8 @@ PANES.forEach(pane => {
         card.appendChild(document.createTextNode(`#${index + 1}`))
       }
 
+      card.className
+
       return card
     })
     .forEach(card => {
