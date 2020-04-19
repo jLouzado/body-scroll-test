@@ -8,22 +8,146 @@
     <title>Horizontal & Vertical Scroll</title>
 
     <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./flex-both.css" />
   </head>
 
   <body>
-    <div class="layout">
+    <div class="container">
       <div class="header gridify tiny">Header</div>
-      <div class="pane pane1">
-        <div class="title sticky--top">Pane One</div>
-        <div id="pane1" class="column"></div>
-      </div>
-      <div class="pane pane2">
-        <div class="title sticky--top">Pane Two</div>
-        <div id="pane2" class="column"></div>
-      </div>
-      <div class="pane pane3">
-        <div class="title sticky--top">Pane Three</div>
-        <div id="pane3" class="column"></div>
+      <div class="layout">
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4 card--sticky">Sticky</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2 card--sticky">Sticky</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1 card--sticky">Sticky</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4 card--sticky">Sticky</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4 card--sticky">Sticky</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5 card--sticky">Sticky</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4 card--sticky">Sticky</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3 card--sticky">Sticky</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3 card--sticky">Sticky</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5">Card 5</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4 card--sticky">Sticky</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
+        <div class="pane">
+          <div class="card card--large card--color1">Card 1</div>
+          <div class="card card--large card--color2">Card 2</div>
+          <div class="card card--large card--color3">Card 3</div>
+          <div class="card card--large card--color4">Card 4</div>
+          <div class="card card--large card--color5 card--sticky">Sticky</div>
+          <div class="card card--large card--color1">Card 6</div>
+          <div class="card card--large card--color2">Card 7</div>
+          <div class="card card--large card--color3">Card 8</div>
+          <div class="card card--large card--color4">Card 9</div>
+          <div class="card card--large card--color5">Card 10</div>
+        </div>
       </div>
     </div>
     <script src="./flex-both.js"></script>
